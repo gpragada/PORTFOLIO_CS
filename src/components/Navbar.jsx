@@ -36,14 +36,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <ScrollLink
+        {/* Removed personalInfo.name from here */}
+        {/* <ScrollLink
           to="hero"
           smooth={true}
           duration={500}
           className="text-2xl font-bold font-mono text-accent cursor-pointer hover:opacity-80 transition-opacity"
         >
           {personalInfo.name}
-        </ScrollLink>
+        </ScrollLink> */}
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
