@@ -37,8 +37,6 @@ const Hero = () => {
               2000,
               'I architect futuristic apps.',
               2000,
-              'I love to code.',
-              2000,
               'I solve real problems.',
               2000,
             ]}
@@ -59,10 +57,11 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8 flex justify-center"
         >
+          {/* Updated profile photo size */}
           <img 
             src="/profile.png" 
             alt="Profile" 
-            className="w-80 h-80 rounded-full object-cover shadow-xl border-4 border-accent"
+            className="w-64 h-64 rounded-full object-cover shadow-xl border-4 border-accent"
           />
         </motion.div>
 

@@ -4,7 +4,7 @@ import { SiExpress, SiMongodb, SiFirebase, SiTailwindcss, SiJavascript, SiPython
 
 // Personal Info Section
 export const personalInfo = {
-  name: "Giri Pragada",
+  name: "Giri Sai Kumar Pragada",
   title: "Data Analyst & ML Engineer",
   email: "gpragada@binghamton.edu",
   linkedin: "https://linkedin.com/in/giripragada",
