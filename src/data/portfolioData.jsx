@@ -142,7 +142,7 @@ export const leadershipAndInvolvement = [
   {
     role: "President & Co-founder",
     organization: "BUAI (Artificial Intelligence Club)",
-    duration: "Jan 2021 – May 2023",
+    duration: "Jan 2025 – May 2025",
     points: [
       "Founded and managed an AI-focused student club with 40+ members.",
       "Organized workshops, mentored peers in ML, NLP, and LLM-based projects."
