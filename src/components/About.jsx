@@ -30,7 +30,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-lg text-text-secondary leading-relaxed">
-          Dynamic and results-oriented Master's candidate in Information Systems at Binghamton University with a proven track record of delivering high-impact data-driven solutions. Skilled in leveraging a wide array of technologies including Python, SQL, AWS, and Azure to build scalable applications, enhance data analytics, and optimize business processes. Adept at leading cross-functional teams, designing AI-driven systems, and developing cloud-based solutions that drive business growth and operational efficiency. Passionate about utilizing machine learning and emerging technologies to solve real-world challenges. Seeking opportunities to contribute technical expertise and innovation to a forward-thinking team.
+          I am a Master's graduate in Information Systems at Binghamton University with a proven track record of delivering high-impact data-driven solutions. Skilled in leveraging a wide array of technologies including Python, SQL, AWS, and Azure to build scalable applications, enhance data analytics, and optimize business processes. Adept at leading cross-functional teams, designing AI-driven systems, and developing cloud-based solutions that drive business growth and operational efficiency. Passionate about utilizing machine learning and emerging technologies to solve real-world challenges. Seeking opportunities to contribute technical expertise and innovation to a forward-thinking team.
 
           </p>
           {/* Optional: Add a profile image here */}

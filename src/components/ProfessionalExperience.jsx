@@ -8,6 +8,26 @@ const ProfessionalExperience = () => {
         <h2 className="text-4xl font-bold text-accent mb-10 text-center">Professional Experience</h2>
 
         <div className="space-y-10">
+          {/* Northern Trust Internship */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-secondary-bg p-6 rounded-lg shadow-md border border-hud-outline"
+          >
+            <h3 className="text-xl font-semibold text-gold-glow">Data Analyst Intern – Northern Trust</h3>
+            <p className="text-sm text-text-secondary mb-2">Jan 2025 – Current | Binghamton, NY</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Built automated Python scripts using pandas, NumPy, and SQL to clean, merge, and transform multi-source financial data, reducing prep time by 40%.</li>
+              <li>Developed Tableau dashboards visualizing P&L trends, fund performance, and client flows, improving report turnaround by 3x.</li>
+              <li>Created dbt and BigQuery-based ETL workflows ingesting 5M+ transactions into Snowflake with 99.8% accuracy.</li>
+              <li>Integrated Jupyter Notebooks and Git versioning into analytics pipelines, improving reproducibility and collaboration.</li>
+              <li>Supported migration from PostgreSQL to AWS Redshift and S3 architecture, contributing to 25% cloud cost savings.</li>
+              <li>Designed Looker dashboards with Oracle Fusion Data Intelligence for Risk & Compliance, reducing reporting delays by 45%.</li>
+            </ul>
+          </motion.div>
+
           {/* TCS Experience */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
