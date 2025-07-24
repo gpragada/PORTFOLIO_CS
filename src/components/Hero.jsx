@@ -7,9 +7,26 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-primary-bg relative overflow-hidden text-text-primary font-sans">
-      
-      {/* Optional: HUD glow background blur */}
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center bg-primary-bg relative overflow-hidden text-text-primary font-sans"
+    >
+      {/* ✅ AWS Certification Badge (public folder image) - top right */}
+      <a
+        href="https://www.credly.com/badges/63277bfd-05bc-49c3-aff2-171ba6129685/linked_in?t=szeppz"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-4 right-4 z-20"
+        title="AWS Certified Machine Learning – Specialty"
+      >
+        <img
+          src="/AWS_ML-c001.png"
+          alt="AWS Certified Machine Learning – Specialty"
+          className="w-32 sm:w-36 md:w-40 rounded-md shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+      </a>
+
+      {/* Optional: background glow */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
         <div className="absolute top-1/4 left-1/2 w-80 h-80 bg-accent opacity-10 rounded-full blur-3xl animate-hud-glow" />
         <div className="absolute bottom-1/3 right-1/4 w-60 h-60 bg-gold-glow opacity-10 rounded-full blur-2xl animate-pulse" />
@@ -46,6 +63,7 @@ const Hero = () => {
             className="text-accent"
           />
         </h2>
+
         <p className="text-text-secondary max-w-2xl mx-auto mb-8 text-base sm:text-lg tracking-wide">
           {personalInfo.bio}
         </p>
@@ -57,14 +75,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8 flex justify-center"
         >
-          {/* Updated profile photo size */}
-          <img 
-            src="/profile.png" 
-            alt="Profile" 
+          <img
+            src="/profile.png"
+            alt="Profile"
             className="w-64 h-64 rounded-full object-cover shadow-xl border-4 border-accent"
           />
         </motion.div>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,6 +108,7 @@ const Hero = () => {
           </a>
         </motion.div>
 
+        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -112,13 +131,19 @@ const Hero = () => {
       </div>
 
       {/* Scroll down indicator */}
-      <ScrollLink 
-        to="about" 
-        smooth={true} 
-        duration={800} 
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={800}
         className="absolute bottom-3 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce z-10"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-4 w-4 text-accent"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </ScrollLink>
